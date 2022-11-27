@@ -33,7 +33,7 @@ public class UserService {
             return false;
         }
     }
-    public void insertUser(UserInfo userInfo) {
+    public void takeNewUser(UserInfo userInfo) {
         UserInfo user = new UserInfo();
         user.setUserId(userInfo.getUserId());
         user.setUserPw(userInfo.getUserPw());

@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Entity
 //@Table(name = "Table_name")
 public class UserInfo {
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
     private String userId;
 //    @Column(length = 25)
     private String userPw;

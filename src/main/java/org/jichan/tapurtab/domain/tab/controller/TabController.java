@@ -39,8 +39,4 @@ public class TabController {
         }
     }
 
-//    @GetMapping("/{id}")
-//    public TabInfo aaa(@PathVariable int id) {
-//        return tabService.findById(id);
-//    }
 }

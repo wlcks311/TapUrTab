@@ -5,12 +5,27 @@
 <head></head>
 <body>
 <h1>검색 결과</h1><br>
-    <c:forEach var="tablist" items="${tabInfos}">
-        id: ${tablist.id}<br>
-        노래제목: ${tablist.songName}<br>
-        가수: ${tablist.singerName}<br>
-        유저id: ${tablist.userId}<br>
-        링크: <a href="${tablist.tabLink}">링크</a><br>
-    </c:forEach>
+    <table border="1">
+        <th>id</th>
+        <th>제목</th>
+        <th>가수</th>
+        <th>유저id</th>
+        <th>악보 링크</th>
+        <c:forEach var="tablist" items="${tabInfos}">
+            <tr>
+                <td>${tablist.id}</td>
+                <td>${tablist.songName}</td>
+                <td>${tablist.singerName}</td>
+                <td>${tablist.userId}</td>
+                <td>
+                <form method="post" action="/tab/getTabDrawInfo">
+                    <input type="hidden" value=${tablist.id} name="tabId">
+                    <input type="submit" value="열기">
+                </form>
+                </td>
+            </tr>
+        </c:forEach>
+    </table>
+
 </body>
 </html>
