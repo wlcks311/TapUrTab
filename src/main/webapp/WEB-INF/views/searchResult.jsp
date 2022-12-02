@@ -7,43 +7,47 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <style>
-    .row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 0vh;
-   
-        }
-
-        .navbar-brand{
-      font-size: 100;
-      margin:20px 40px;
-    }
-     table{
-        align-items: center;
-     }
-      span.color1 {
-        color: rgb(226, 9, 9);
-        }
-        span.color2 {
-        color: rgb(21, 179, 53);
-        }
-      
-        table {
+    .table {
             margin-left:auto; 
             margin-right:auto;
             width: 60%;
             
         }
 
-        table, td, th {
-            border-collapse : collapse;
-            border : 1px solid black;
-        };
+       
 
+          h1 {
+        font-weight: bold;
+      }
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 30vh;
+   
+        }
+
+    .navbar-brand{
+      font-size: 100;
+      margin:20px 40px;
+    }
+    
+    span.color1 {
+        color: rgb(226, 9, 9);
+        }
+    span.color2 {
+        color: rgb(21, 179, 53);
+        }
+      
+       
+
+
+      
 
     </style> 
 </head>
+
+
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
@@ -65,15 +69,24 @@
           
         </div>
       </div>
-      <table>
-        <th>id</th>
-        <th>제목</th>
-        <th>가수</th>
-        <th>유저id</th>
-        <th>악보 링크</th>
-        <c:forEach var="tablist" items="${tabInfos}">
+
+
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">제목</th>
+            <th scope="col">가수</th>
+            <th scope="col">유저id</th>
+            <th scope="col">악보 링크</th>
+          </tr>
+        </thead>
+
+
+        <tbody>
+            <c:forEach var="tablist" items="${tabInfos}">
             <tr>
-                <td>${tablist.id}</td>
+                <th scope="row">${tablist.id}</td>
                 <td>${tablist.songName}</td>
                 <td>${tablist.singerName}</td>
                 <td>${tablist.userId}</td>
@@ -85,7 +98,10 @@
                 </td>
             </tr>
         </c:forEach>
-    </table>
+        </tbody>
+      </table>
+
+      
 
 
 

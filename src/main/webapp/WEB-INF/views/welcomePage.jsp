@@ -74,8 +74,8 @@
                 <br>
             <br>
                 <form method="get" action="/welcomePage/TabDefault">
-                    악보 만들기
-                    <input type="submit" value="악보 편집하기">
+                    원하는 악보가 없으신가요?
+                    <input type="submit" value="새 악보 만들기">
                 </form>
 
           </div>
