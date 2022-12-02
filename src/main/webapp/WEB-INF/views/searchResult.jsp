@@ -15,7 +15,10 @@
    
         }
 
-        
+        .navbar-brand{
+      font-size: 100;
+      margin:20px 40px;
+    }
      table{
         align-items: center;
      }

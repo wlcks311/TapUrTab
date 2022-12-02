@@ -28,6 +28,7 @@
     }
     .navbar-brand{
       font-size: 100;
+      margin:20px 40px;
     }
    </style> 
 

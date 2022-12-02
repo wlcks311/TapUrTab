@@ -14,7 +14,10 @@
             min-height: 80vh;
        
             }
-    
+            .navbar-brand{
+      font-size: 100;
+      margin:20px 40px;
+    }
             h1 {
             font-weight: 700;
           }
@@ -29,6 +32,10 @@
             font-size: 100;
         }
     
+        .navbar-brand{
+      font-size: 100;
+      margin:20px 40px;
+    }
         </style> 
     
     </head>
