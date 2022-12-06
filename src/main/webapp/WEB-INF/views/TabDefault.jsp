@@ -16,6 +16,7 @@
 
 
         input[type="text"]{
+            background-color: #FBF5EF;
             size ="1";
             width:15px;
             height:20px;
@@ -38,7 +39,7 @@
             width:1200px;
             border: 1px solid black;
             text-align: left;
-            background-color: #D0F5A9;
+            background-color: #F2FBEF;
         }
         input.title {
             width: 300px;
@@ -46,6 +47,7 @@
             font-size: 40px;
             border: 1px solid black;
             text-align: left;
+            background-color: white;
         }
         input.singer {
             width: 300px;
@@ -53,8 +55,10 @@
             font-size: 40px;
             border: 1px solid black;
             text-align: left;
+            background-color: white;
         }
         div.row {
+
             width: fit-content;
             border: 1px solid black;
             margin: 0;

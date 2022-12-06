@@ -23,6 +23,7 @@
             border: 0;
             text-align: center;
             -moz-appearance: textfield;
+            background-color: #FBF5EF;
         }
 
         div.out {
@@ -46,6 +47,7 @@
             font-size: 40px;
             border: 1px solid black;
             text-align: left;
+            background-color: white;
         }
         input.singer {
             width: 300px;
@@ -53,6 +55,7 @@
             font-size: 40px;
             border: 1px solid black;
             text-align: left;
+            background-color: white;
         }
         div.row {
             width: fit-content;
