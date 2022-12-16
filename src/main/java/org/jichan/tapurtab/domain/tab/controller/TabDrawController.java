@@ -31,9 +31,6 @@ public class TabDrawController {
     public ModelAndView saveTab(@RequestBody TabInfo tabInfo, @SessionAttribute(name = "user") UserInfo userInfo, ModelMap model) {
         model.addAttribute("tabInfo", tabInfo);
         tabInfo.setUserId(userInfo.getUserId());
-        log.info("HELLO");
-        log.info("{}", userInfo);
-        log.info("{}", tabInfo);
         tabDrawService.insertTab(tabInfo);
 
         return new ModelAndView("saveSuccess", model);
